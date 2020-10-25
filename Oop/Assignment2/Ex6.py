@@ -9,7 +9,7 @@ def longestWord(filename):
         line = f.readline()
         if not line:
             break;
-        tmp_list = line.replace(',', ' ').replace('.', ' ').split()
+        tmp_list = line.split(' ')
         for i in tmp_list:
             if(longest_text_len < len(i)) :
                 longest_text_len = len(i)
